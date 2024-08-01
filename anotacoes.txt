@@ -1,0 +1,56 @@
+--criar package.json
+npm init
+
+/******** instalar o express e outros pacotes *************/
+npm i express jsonwebtoken password-validator email-validator --save
+
+/************ instanlando o sequelize ***********/
+npm i mysql2 sequelize --save
+
+/**** instalando pacote para controlar status *************/
+npm i http-status --save
+
+/**** instalar body-parse para converter a requisição html em json ************/
+npm i --save body-parser
+
+
+criar past src
+criar src/app.js
+criar src/config
+criar src/database
+
+/*********usuario**********/
+service/auth.js                 --serviço de autenticação
+controller/auth.js
+model/BlackList
+repository/auth.js
+middleware/auth.js
+routes.api/auth.js
+model/Usuario.js                --modelo da tabela de usuario
+repository/usuarios.js          --repositorio do usuario
+controller/usuarios.js          --controle do usuario
+middleware/validacao
+routes/api/usuarios.js          --rotas do usuario
+
+--antes de iniciar verificar o package.json, para indicar onde esta a pagina principal
+"main": "src/app.js",
+
+--inciar projeto
+node .
+
+
+
+
+
+
+
+
+
+
+**************** TENTANDO SUBIR A APLICACAO **************************
+- ENTRAR NO GIT
+- IR NO PERFIL - YOU REPOSITORIES E CRIAR UM NOVO REPOSITORIO
+
+- no dir da apl
+git init - vai criar um repositorio vazio
+
